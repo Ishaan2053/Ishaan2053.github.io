@@ -72,13 +72,12 @@ header {
 
 .cntimg {
   background-image: linear-gradient(to right, #1b1b1b 0%, #000000 100%);
-  padding: 0px;
   color: white;
   height: 100vh;
 }
 
 .abtimg {
-  background-image: linear-gradient(to right, #4f4d4d 0%, #1e1e1e 100%);
+  background-image: linear-gradient(to right, #1b1b1b 0%, #000000 100%);
   color: white;
   height: 100vh;
 }
@@ -124,22 +123,20 @@ header {
 /* mail button */
 .button {
   display: inline-block;
-  background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC 51%, #02AAB0 100%);
+  background-color: #2c71a9;
   border: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 38px;
   padding: 10px;
-  width: 135px;
-  height: 50px;
+  width: 300px;
+  height: 100px;
   transition: all 0.5s;
   cursor: pointer;
   box-shadow: 0 0 20px rgb(31, 31, 31);
   border-radius: 25px;
   display: block;
   background-size: 200% auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin: 100px auto 20px 600px;
 }
 
 
@@ -166,25 +163,25 @@ header {
 
 .button:hover span {
   padding-right: 25px;
-  color: #252525;
+  color: aliceblue;
 }
 
 
 .button:hover span:after {
   opacity: 1;
   right: 0;
-  color: #252525;
+  color: aliceblue;
 }
 
 
 .cnttxt {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
-
+/* title screen effect */
 .Iam {
-  padding: 2em 5em;
+  padding: auto;
   font: normal 40px/50px Montserrat, sans-serif;
   color: #999;
   text-align: center;
@@ -210,7 +207,7 @@ header {
   white-space: nowrap;
   top: 0;
   left: 0;
-   text-align: center;
+  text-align: center;
 
 
 /*animation*/
@@ -267,4 +264,79 @@ header {
     40% { top: -100px; }
     60% { top: -150px; }
     80% { top: -200px; }
+}
+
+/* contact effect text */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+
+.text {
+  position: relative;
+  width: 550px;
+  left: 50%;
+  margin-left: -750px;
+  height: 40px;
+  top: 20%;
+  margin-top: -20px;
+  font-size: 50px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 1000px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+.abc {
+  width: 1410px;
+  text-align: left;
+  font-size: 25px;
 }
